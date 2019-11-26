@@ -1,0 +1,25 @@
+// Fonts here
+// see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
+@font-face {
+    font-family: 'robotoregular';
+    src: url('/assets/fonts/roboto-regular-webfont.eot');
+    src: url('/assets/fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/roboto-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/roboto-regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'juraregular';
+    src: url('/assets/fonts/jura-regular-webfont.eot');
+    src: url('/assets/fonts/jura-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/jura-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/jura-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/jura-regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/jura-regular-webfont.svg#juraregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

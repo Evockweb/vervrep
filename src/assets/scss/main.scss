@@ -1,0 +1,53 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+
+html {
+  line-height: $mainLineHeight;
+	font-size: $mainFontSize;
+	color: $mainFontColor;
+  height: 100%;
+  @media screen and (max-width: $desktopWidth) {
+		font-size: 16px;
+  }
+  @media screen and (max-width: $tableWidth) {
+		font-size: 15px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+		font-size: 14px;
+  }
+}
+
+body {
+  font-family: $mainFont;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0px 15px;
+  
+  @media screen and (min-width: $smDesktopWidth) {
+    max-width: $tableWidth;
+  }
+  @media screen and (min-width: $desktopWidth) {
+    max-width: $smDesktopWidth;
+  }
+  @media screen and (min-width: $lgdesktopWidth) {
+    max-width: $desktopWidth;
+  }
+}
+
+// Modules
+@import "modules/header.scss";
+@import "modules/loader.scss";
+@import "modules/logo.scss";
+@import "modules/menu.scss";
+@import "modules/contact-info.scss";
+@import "modules/hamburger.scss";

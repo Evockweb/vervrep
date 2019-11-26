@@ -1,0 +1,42 @@
+.header{
+    &_background-color{
+        &_main{
+            background-color: $c-main-spen;
+        }
+    }
+    &__container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu{
+        position: fixed;
+        top: 0;
+        left: -280px;
+        width: 260px;
+        height: 100vh;
+        padding: 1rem;
+        z-index: 100;
+        background: linear-gradient(45deg, $c-light-spen, $c-second-light-spen);
+        box-shadow: 0px 0px 6px $neutral-primary;
+        transition: 0.5s;
+        &.active{
+            left: 0px;
+        }
+        @media screen and (min-width: $phoneWidth){
+            position: unset;
+            top: unset;
+            left: unset;
+            width: unset;
+            height: unset;
+            padding: unset;
+            z-index: unset;
+            background: unset;
+            box-shadow: unset;
+        }
+    }
+    &__top-line{
+        background: linear-gradient(45deg, $c-light-spen, $c-second-light-spen);
+    }
+}

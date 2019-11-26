@@ -1,0 +1,28 @@
+.menu{
+    display: flex;
+    flex-flow: column wrap;
+    flex: auto;
+    justify-content: flex-start;
+    &__item{
+        margin: 0 rem(10);
+        @media screen and (min-width: $phoneWidth){
+            &:first-child{
+                margin-left: 0px;
+            }
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+    &__link{
+        &_color{
+            &_light{
+                color: $default-color;
+            }
+        }
+    }
+    @media screen and (min-width: $phoneWidth){
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+}
