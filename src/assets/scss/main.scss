@@ -31,6 +31,7 @@ body{
   font-family: $mainFont;
 	-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 button{
   font-family: $mainFont;
@@ -61,4 +62,4 @@ section{
 @import "modules/adv.scss";
 @import "modules/text-adv-info.scss";
 @import "modules/text-hide.scss";
-
+@import "modules/custom-scroll.scss";

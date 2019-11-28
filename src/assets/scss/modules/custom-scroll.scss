@@ -1,0 +1,19 @@
+.custom-scroll{
+    overflow: hidden;
+    &__line{
+        position: fixed;
+        right: 0px;
+        top: 0;
+        width: 20px;
+        height: 100%;
+        z-index: 100;
+    }
+    &__line-tracker{
+        position: fixed;
+        top: 0;
+        right: 1px;
+        width: 4px;
+        height: 200px;
+        background-color: $verv-close;
+    }
+}

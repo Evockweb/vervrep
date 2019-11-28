@@ -5,6 +5,7 @@
     width: 100%;
     background: linear-gradient(#fff0 0%, #fff 95%);
     height: 80px;
+    z-index: 100;
     @media(min-height: 737px){
         bottom: 30px;
     }
