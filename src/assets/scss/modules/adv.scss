@@ -6,6 +6,9 @@
     padding: 0 rem(20);
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
+    @media (max-height: $iphone6p){
+        height: 150vh !important;
+    }
     &__title{
         font-family: 'SF Pro Display';
         font-weight: 700;
