@@ -7,9 +7,10 @@
 html {
   line-height: $mainLineHeight;
 	font-size: $mainFontSize;
-	color: $mainFontColor;
+  color: $mainFontColor;
+  font-weight: $mainFontWeight;
   height: 100%;
-  @media screen and (max-width: $desktopWidth) {
+  /*@media screen and (max-width: $desktopWidth) {
 		font-size: 16px;
   }
   @media screen and (max-width: $tableWidth) {
@@ -17,22 +18,29 @@ html {
   }
   @media screen and (max-width: $phoneWidth) {
 		font-size: 14px;
+  }*/
+  @media screen and (max-width: $iphone6) {
+    font-size: 17px;
+  }
+  @media screen and (max-width: $iphone5) {
+    font-size: 16px;
   }
 }
 
-body {
+body{
   font-family: $mainFont;
 	-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.container {
+button{
+  font-family: $mainFont;
+}
+.container{
   width: 100%;
   position: relative;
   margin: 0 auto;
   max-width: 100%;
   padding: 0px 15px;
-  
   @media screen and (min-width: $smDesktopWidth) {
     max-width: $tableWidth;
   }
@@ -43,6 +51,14 @@ body {
     max-width: $desktopWidth;
   }
 }
-
+section{
+  max-width: 414px;
+  width: 100%;
+  margin: 0 auto;
+}
 // Modules
 @import "modules/header.scss";
+@import "modules/adv.scss";
+@import "modules/text-adv-info.scss";
+@import "modules/text-hide.scss";
+

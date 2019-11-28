@@ -9,6 +9,7 @@ node_modules
 # Dist & test
 test
 dist
+docs
 
 # BD, logs
 *.log
@@ -27,5 +28,3 @@ Desktop.ini
 .DS_Store*
 ehthumbs.db
 Icon?
-src/assets/fonts/jura-regular-webfont.svg
-src/assets/fonts/roboto-regular-webfont.svg
